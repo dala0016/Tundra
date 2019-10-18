@@ -1,0 +1,112 @@
+/* Gender selection screen */
+#gender{
+    background: linear-gradient(to bottom right, lightskyblue, lightblue);
+}
+
+#prompt-male, #prompt-female {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 50%;
+    min-height: 100%;
+    background-color: cornflowerblue;
+    transition: transform .5s ease-in;
+}
+
+#prompt-female {
+    left: 50%;
+    background-color: magenta;
+}
+
+#prompt-female p, #prompt-male p{
+    margin: 35vh auto;
+    color: black;
+    text-align: center;
+}
+
+.move-left{
+    transform: translateX(-300%);
+}
+
+.move-right{
+    transform: translateX(300%);
+}
+
+/* Main page CSS */
+#main{
+    background: linear-gradient(to bottom right, lightskyblue, lightblue);
+}
+
+/* Overlay CSS */
+.overlay-bars{
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility .4s, opacity 0.4s linear;
+}
+
+.overlay-bars.active{
+    visibility: visible;
+    opacity: 1; 
+    transition: visibility .1s, opacity .2s linear;
+}
+
+.overlay-bars.active h1{
+    border-radius: 5px;
+    background-color: black;
+}
+
+/* Favourites Header CSS */
+h2 {
+    text-align: center;
+}
+
+.favheader{
+    position: relative;
+    width: 100%;
+    padding: .4rem;
+    text-align: center;
+    border: 2px solid;
+}
+
+#favourites{
+    background: linear-gradient(to bottom right, lightskyblue, lightblue);
+}
+
+/* Profile cards CSS */
+.card{
+    border: 1px blue solid;
+    border-radius: 5px;
+}
+
+.card img{
+    padding: 0;
+}
+
+.card p{
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+/* List item CSS for Favourites */
+.list-view{
+    margin-top: 0;
+
+}
+
+.list-item{
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: rgb(238, 238, 238);
+    background-color: azure;
+    margin: 0.2rem;
+}
+
+.list-item p{
+    text-align: center;
+    padding-top: 6%;
+}
+
+/* Menu Bar CSS */
+.nopointer{
+    pointer-events: none;
+}

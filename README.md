@@ -1,2 +1,1 @@
-# Tundra
-A Dating App
+# tundra
